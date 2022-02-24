@@ -20,7 +20,11 @@ export default {
   },
   methods: {
     onDecode(result) {
-      alert(result);
+      if (result == null) {
+        alert("NULL VALUE");
+      } else {
+        alert(result);
+      }
     },
   },
 };
