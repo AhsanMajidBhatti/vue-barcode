@@ -18,6 +18,11 @@ export default {
   props: {
     msg: String,
   },
+  methods: {
+    onDecode(result) {
+      alert(result);
+    },
+  },
 };
 </script>
 
