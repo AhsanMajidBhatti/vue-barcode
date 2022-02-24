@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     onDecode(result) {
-      if (result == null) {
+      if (result === null) {
         alert("NULL VALUE");
       } else {
         alert(result);
@@ -45,5 +45,11 @@ li {
 }
 a {
   color: #42b983;
+}
+.hello {
+  margin-left: 35%;
+  width: 30%;
+  height: 30%;
+  margin-top: 10%;
 }
 </style>
