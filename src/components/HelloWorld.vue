@@ -4,18 +4,22 @@
       @decode="onDecode"
       @loaded="onLoaded"
     ></StreamBarcodeReader>
-    <ImageBarcodeReader @decode="onDecode2" @error="onError"></ImageBarcodeReader>
+    <ImageBarcodeReader
+      @decode="onDecode2"
+      @error="onError"
+    ></ImageBarcodeReader>
   </div>
 </template>
 
 <script>
 import { StreamBarcodeReader } from "vue-barcode-reader";
-import { ImageBarcodeReader } from "vue-barcode-reader"; 
+import { ImageBarcodeReader } from "vue-barcode-reader";
 
 export default {
   name: "HelloWorld",
   components: {
     StreamBarcodeReader,
+    ImageBarcodeReader,
   },
   props: {
     msg: String,
@@ -28,7 +32,9 @@ export default {
         alert(result);
       }
     },
-    onDecode2 (result) { console.log(result) }
+    onDecode2(result) {
+      console.log(result);
+    },
   },
 };
 </script>
